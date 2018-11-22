@@ -1,0 +1,14 @@
+single image
+
+python3 test_lanenet.py --is_batch False --batch_size 1 --weights_path model/tusimple_lanenet/tusimple_lanenet_vgg_2018-05-21-11-11-03.ckpt-94000 --image_path data/tusimple_test_image/0.jpg
+
+
+
+
+several images
+python3 test_lanenet.py --is_batch True --batch_size 2 --save_dir data/tusimple_test_image/ret --weights_path model/tusimple_lanenet/tusimple_lanenet_vgg_2018-05-21-11-11-03.ckpt-94000 --image_path data/tusimple_test_image/
+
+
+
+train
+python3 train_lanenet.py --net_flag dense --dataset_dir data/training_data_example/
